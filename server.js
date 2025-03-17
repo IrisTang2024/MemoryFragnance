@@ -50,7 +50,7 @@ let openaiStatusMsg = '✅ OpenAI client initialized successfully';
 try {
   // Force use of the real API key
   openaiClient = new OpenAI({
-    apiKey: sk-OQ4jti-EbvbrzD1sPst2cBRgBlt30OySUaWpKKoxCIT3BlbkFJZT_xtgrSl8P0u7i4sWfgrscrFPlGYvuj2Meb__aSAA
+    apiKey: process.env.openai_api_key
   });
   
   // Test the API key by making a simple call
